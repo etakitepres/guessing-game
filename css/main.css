@@ -1,0 +1,103 @@
+body {
+	background: url("../img/background.jpg") no-repeat center center fixed;
+		-webkit-background-size: cover;
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+	font-family: "Helvetica", sans-serif;
+		-webkit-font-smoothing: antialiased;
+		color: white;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#wrapper {
+	max-width: 450px;
+	margin: 0 auto;
+	/*background: #f2f2f2; */
+}
+
+header {
+	text-align: center;
+}
+
+#weather-image {
+	float: left;
+}
+
+	#weather-image img {
+		max-width: 300px;
+		height: auto;
+	}
+
+#weather-temperature {
+	float-left;
+}
+
+	#weather-temperature h1 {
+		padding: 20% 0 0 75%;
+		font-size: 72px;
+		font-weight: normal;
+	}	
+
+#guess-field {
+	height: 60px;
+	width: 148px;	
+	background-color: white;
+	border: solid 1px #f2f2f2;
+	text-align: center;
+	clear: both;
+	float: left;
+}
+
+#guess-submit-button a {
+	height: 60px;
+	width: 290px;
+	margin-left: 10px;
+	background-color: #0dbe43;
+	border-bottom: solid 2px #0e8b69;
+	display: inline-block;
+	float: left;
+	color: white;
+	text-align: center;
+}
+
+	#guess-submit-button a:hover {	
+		background-color: #0bab3c;
+	}
+
+#guess-error-message {
+	max-width: 450px;
+	margin: 2000px 0 0 0;
+	padding: 5%;
+	background-color: #d82c18;
+	color: #550f07;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
