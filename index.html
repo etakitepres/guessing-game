@@ -11,42 +11,44 @@
 	<body>
 		<div id="wrapper">
 			<header>
-				<h1>GIVEME<strong>SUMMER</strong></h1>
+				<h1>GUESS<strong>A</strong>NUMBER</h1>
 			</header>
 			<section>
-				<div>
-					<div id="weather-image">
-						<img src="http://upload.wikimedia.org/wikipedia/commons/0/0d/O.sun.png" alt="sunny">
+				<div id="countdown-block">
+					<div id="countdown-counter">
+						<div id="countdown-number">
+							<h1>5</h1>
+						</div>
+						<div id="countdown-remaining">
+							<h2>guesses remaining</h2>
+						</div>
 					</div>
-					<div id="weather-temperature">
-						<h1>67&deg;</h1>
+					<div id="countdown-hint">
+						<p>To begin, guess a number from 1 to 100</p>
 					</div>
 				</div>
-				<div>
-					<div>
-						<div id="guess-field">
-							Guessing Entry Field
-						</div>
-						<div id="guess-submit-button">
-							<a href="">
-								<h2>Give me summer!</h2>
-							</a>
-
-							<img src="img/DOC_Logo_White.png">
-						</div>
-						</a>
-					</div>
-					<div id="guess-error-message">
-						<strong>Oops!</strong> That's not a number between 1-100. Try again.
-					</div>	
-				</div>
-				<div>
-					Guessing History
+				<form name="input" action="guessing-game.js" method="get" id="guess-block" autocomplete="off">
+					<input type="text" name="guess" id="guess-input">
+					<button type="button" id="guess-submit">Guess!</button>
+					<button type="button" id="guess-answer">Give up?</button>
+				</form>
+				
+				<!-- 	<div id="guess-error-message">
+						<p><strong>Oops!</strong> That's not a number between 1-100. Try again.</p>
+					</div>	 -->
+				<div id="guess-history">
+					<ul id="guess-history-headers"> 
+						<li class="col-1"><h3><strong>Guess</strong></h3></li>
+						<li class="col-2"><h3><strong>Result</strong></h3></li>
+					</ul>
+					<hr>
 				</div>
 			</section>
 			<footer>
 				<p>Created by Katie Peters</p>
 			</footer>
 		</div>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/guessing-game.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
